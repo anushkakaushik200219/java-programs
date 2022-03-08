@@ -1,0 +1,16 @@
+import java.util.Scanner;
+class first
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        {
+                System.out.println("name "+args[0]);
+                System.out.println("course "+args[1]);
+                int r=Integer.parseInt(args[2]);
+                System.out.println("uni.roll no "+r);
+                int s=Integer.parseInt(args[3]);
+                System.out.println("semester "+s);
+        }
+    }
+}
