@@ -1,6 +1,5 @@
-/******************************************************************************
 
-
+*******************************************************************************/
 import java.util.Scanner;
 public class Main
 {
@@ -10,7 +9,7 @@ public class Main
 	        String s=sc.nextLine();
 	    StringBuffer sb=new StringBuffer(s);
 	    String st=sb.toString();
-		System.out.println("hi : "+st);
+		System.out.println("OLD STRING : "+st);
 	    String n=" ";
 	    char ch;
 	    int f=0;
@@ -25,7 +24,7 @@ public class Main
 	    }
 	    StringBuffer sb2=new StringBuffer(n);
 	    String st2=sb2.toString();
-	    System.out.println("hi : "+st2);
+	    System.out.println("NEW STRING : "+st2);
 	    }
 	}
 }
