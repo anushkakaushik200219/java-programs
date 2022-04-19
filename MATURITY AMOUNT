@@ -1,0 +1,41 @@
+import java.util.*;
+class Main
+{
+	public static void main(String arr[])
+	{
+		Scanner sc=new Scanner(System.in);
+		int ch;
+		double p,r,n,A;
+		System.out.println("M E N U");
+		System.out.println("“1. Recurring Deposit”");
+		System.out.println("“2. Simple Interest”");
+		System.out.println("“Enter your choice:”");
+		ch=sc.nextInt();
+		switch(ch)
+		{
+		    case 1:
+				System.out.println("“Enter the principal:”");
+				p=sc.nextDouble();
+				System.out.println("“Enter the rate:”");
+				r=sc.nextDouble();
+				System.out.println("“Enter the time period:”");
+				n=sc.nextDouble();
+				A=p*n+p*n*(n+1)/2*r/100*1/12.0;
+				System.out.println("“Amount=”"+A);
+			break;
+			case 2:
+				System.out.println("“Enter the principal:”");
+				p=sc.nextDouble();
+				System.out.println("“Enter the rate:”");
+				r=sc.nextDouble();
+				System.out.println("“Enter the time period:”");
+				n=sc.nextDouble();
+				A=p*Math.pow(1+r/100,n);
+				System.out.println("“Amount=”"+A);
+			break;
+			
+			default:
+				System.out.println("“Invalid choice!”");
+		}
+	}
+}
